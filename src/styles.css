@@ -1,0 +1,122 @@
+/* App.css */
+
+/* Center the entire page */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #81cfe0, #4fa3d1);
+  font-family: "Roboto", sans-serif;
+}
+
+/* Card containing all content */
+.weather-card {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Title */
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input field */
+.city-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+/* Button with light blue color and rounded corners */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4fa3d1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2e87b9;
+}
+
+.submit-btn:disabled {
+  background-color: #c9d6e4;
+  cursor: not-allowed;
+}
+
+/* Error message */
+.error {
+  color: #e74c3c;
+  margin-top: 15px;
+}
+
+/* Weather info styling */
+.weather-info {
+  margin-top: 20px;
+}
+
+.weather-location {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.temperature {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+.condition {
+  font-size: 22px;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .weather-card {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .city-input {
+    font-size: 16px;
+  }
+
+  .submit-btn {
+    font-size: 16px;
+  }
+
+  .weather-location {
+    font-size: 20px;
+  }
+
+  .temperature {
+    font-size: 36px;
+  }
+
+  .condition {
+    font-size: 18px;
+  }
+}
